@@ -14,6 +14,14 @@ export class App extends Component {
     };
   }
 
+  onLeaveFeedback = e => {
+    const button = e.currentTarget;
+    const buttonTextContent = button.textContent.toLowerCase();
+    this.setState(prevState => ({
+      [buttonTextContent]: prevState[buttonTextContent] + 1,
+    }));
+  };
+
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
