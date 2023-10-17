@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledButton = styled.button`
   font-size: 16px;
@@ -25,4 +26,9 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       })}
     </>
   );
+};
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+  id: PropTypes.number,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
