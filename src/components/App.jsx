@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
+import { styled } from 'styled-components';
 
 export class App extends Component {
   constructor() {
@@ -40,13 +41,7 @@ export class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <div
-        style={{
-          height: '100vh',
-          fontSize: 40,
-          color: '#010101',
-        }}
-      >
+      <StyledWrapper>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -62,7 +57,16 @@ export class App extends Component {
             positivePercentage={positivePercentage}
           ></Statistics>
         </Section>
-      </div>
+      </StyledWrapper>
     );
   }
 }
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  height: '100vh';
+  font-size: 40px;
+  color: '#010101';
+`;

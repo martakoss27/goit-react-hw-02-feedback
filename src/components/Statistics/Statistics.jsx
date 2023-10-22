@@ -1,12 +1,6 @@
 import { styled } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const StyledUl = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 5px;
-`;
-
 export const Statistics = ({
   good,
   neutral,
@@ -31,3 +25,9 @@ Statistics.propTypes = {
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
 };
+
+const StyledUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5px;
+`;

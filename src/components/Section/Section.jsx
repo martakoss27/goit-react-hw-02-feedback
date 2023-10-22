@@ -1,8 +1,13 @@
+import { styled } from 'styled-components';
+
 export const Section = ({ title, children }) => {
   return (
-    <div>
+    <StyledSection>
       <h2>{title}</h2>
       {children}
-    </div>
+    </StyledSection>
   );
 };
+const StyledSection = styled.section`
+  text-align: center;
+`;
