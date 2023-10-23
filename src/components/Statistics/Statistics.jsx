@@ -29,5 +29,5 @@ Statistics.propTypes = {
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin-bottom: 5px;
+  color: #bf4f74;
 `;

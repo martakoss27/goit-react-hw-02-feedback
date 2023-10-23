@@ -64,7 +64,6 @@ export class App extends Component {
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-items: center;
   height: '100vh';
   font-size: 40px;
