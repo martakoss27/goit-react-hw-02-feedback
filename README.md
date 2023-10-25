@@ -3,6 +3,7 @@
 ## Basic app colletcing feedback
 
 ### Build with
-React.js
-NPM package manager
-styled-components
+
+1. React.js
+2. NPM package manager
+3. styled-components
